@@ -212,7 +212,7 @@ export const Hero = ({ onOpenResume }) => {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-tr from-emerald-600 via-teal-500 to-slate-900 shadow-2xl">
               <div className="w-full h-full rounded-full p-1 bg-slate-900">
                 <img
-                  src="/avatar.jpg"
+                  src="./avatar.jpg"
                   alt="Ashutosh Verma - Aspiring Product Manager"
                   className="w-full h-full object-cover rounded-full shadow-inner border-2 border-emerald-500/40"
                 />

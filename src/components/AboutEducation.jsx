@@ -26,7 +26,7 @@ export const AboutEducation = ({ onOpenResume }) => {
               <div className="relative inline-block">
                 <div className="absolute inset-0 rounded-full bg-emerald-500/20 blur-xl animate-pulse" />
                 <img
-                  src="/avatar.jpg"
+                  src="./avatar.jpg"
                   alt="Ashutosh Verma - Product & Strategy Associate (Founding Team)"
                   className="relative w-28 h-28 sm:w-32 sm:h-32 object-cover rounded-full mx-auto shadow-2xl border-2 border-[#10B981] hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
                 />
