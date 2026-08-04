@@ -9,7 +9,7 @@ const token = process.env.GH_TOKEN || process.argv[2] || '';
 
 async function run() {
   console.log('Initializing local git repository...');
-  await git.init({ fs, dir });
+  await git.init({ fs, dir, defaultBranch: 'main' });
 
   console.log('Adding remote origin...');
   try {
@@ -53,6 +53,15 @@ async function run() {
     message: 'Deploy portfolio to GitHub',
   });
   console.log('Commit created with SHA:', sha);
+
+  console.log('Writing branch refs/heads/main...');
+  await git.writeRef({
+    fs,
+    dir,
+    ref: 'refs/heads/main',
+    value: sha,
+    force: true,
+  });
 
   console.log('Pushing to GitHub (main branch)...');
   const pushResult = await git.push({
