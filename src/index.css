@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #F1F5F9;
+  --surface-card: #FFFFFF;
+  --accent-primary: #10B981;
+  --accent-secondary: #059669;
+  --text-primary: #0F172A;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  --card-dark: #1E293B;
+  --border-accent: rgba(16, 185, 129, 0.3);
+}
+
+.dark {
+  --bg-primary: #0F172A;
+  --bg-secondary: #0B0F17;
+  --surface-card: #1E293B;
+  --accent-primary: #10B981;
+  --accent-secondary: #34D399;
+  --text-primary: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border-color: #334155;
+  --card-dark: #1E293B;
+  --border-accent: rgba(16, 185, 129, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply min-h-screen bg-slate-50 dark:bg-[#0F172A] text-slate-900 dark:text-slate-100 antialiased selection:bg-[#10B981] selection:text-white transition-colors duration-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-[#0F172A];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-[#10B981] transition-colors;
+}
+
+/* Executive Glassmorphism Utility */
+.glass-card-emerald {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
