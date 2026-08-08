@@ -112,8 +112,9 @@ export const projectsList = [
     subtitle: "Masai × BITSoM Capstone Project",
     type: "📊 Slide Deck (9-10 Slides)",
     readTime: "⚡ 2 min read",
-    categories: ["All", "Projects"],
+    categories: ["All", "Projects", "Case Studies"],
     tags: ["0→1 SCOPE", "HEALTHCARE AI", "SLIDE DECK"],
+    frameworks: ["MoSCoW Prioritization", "ERRC Grid", "SCAMPER", "User Journey Mapping", "Impact-Effort Matrix"],
     shortDesc: "0→1 discovery & product strategy for a voice-first AI maternal health assistant in rural EAG states—eliminating text literacy & language barriers.",
     highlights: [
       "🎯 Problem & Users: Solved long clinic waiting times & low literacy by mapping 3 core personas (Mothers, Family Caregivers, ASHA Workers).",
@@ -121,7 +122,7 @@ export const projectsList = [
       "🎨 Figma Wireframing: Designed 20+ interactive screens for Voice Assistant, Care Checklists, Emergency Help, and ASHA dashboards."
     ],
     isPlaceholder: false,
-    ctaText: "📖 View Slide Deck (PDF)",
+    ctaText: "📖 View Case Study",
     fullDetails: {
       problem: "Patients in Tier 2/3 regions face language barriers, fragmented medical history tracking, and lack of timely symptom guidance leading to delayed care.",
       solution: "An AI-first voice and text conversational assistant supporting regional Indian languages with structured guidance, appointment logging, and maternal health tracking.",
@@ -133,6 +134,40 @@ export const projectsList = [
         "Applied ERRC grid to eliminate redundant steps, reduce onboarding friction, raise regional language support, and create voice-native AI responses."
       ],
       impact: "Rated 94% in BITSoM Capstone evaluations; benchmarked for fast user comprehension in user testing."
+    }
+  },
+  {
+    id: "vastrai",
+    icon: "🌱",
+    title: "Vastrai — Upcycled Fashion Platform",
+    subtitle: "Sustainable Circular E-Commerce for Gen Z & Millennials",
+    type: "♻️ Circular Fashion PRD",
+    readTime: "⚡ 2 min preview",
+    categories: ["All", "Projects", "Case Studies"],
+    status: "🟢 PRD & Prototyping Phase",
+    tags: ["SUSTAINABILITY", "CIRCULAR E-COMMERCE", "UX & PRD"],
+    frameworks: ["User Research & Personas", "Sustainable Value Chain", "MoSCoW Prioritization", "User Journey Mapping", "Figma Prototyping"],
+    shortDesc: "A circular fashion platform aimed at reducing textile waste by offering upcycled, trendy clothing tailored for Gen Z and Millennial consumers.",
+    highlights: [
+      "🌱 Sustainability & Gen Z Focus: Making circular fashion accessible, trendy, and affordable through curated upcycling.",
+      "📄 PRD & Workflows: Authoring sustainable purchasing, garment trade-in rewards, and upcycling verification workflows.",
+      "🎨 Interactive Wireframes: Designing low & high-fidelity Figma screens for upcycled collection discovery & trade-in tracking."
+    ],
+    isPlaceholder: false,
+    ctaText: "🔍 View Case Study Preview",
+    figmaEmbedUrl: "",
+    prototypeUrl: "",
+    fullDetails: {
+      problem: "Massive textile waste in fast fashion combined with Gen Z & Millennial demand for sustainable, affordable, and unique apparel without eco-guilt.",
+      solution: "Vastrai bridges the gap with a curated circular marketplace offering verified upcycled garments, effortless trade-in rewards, and transparent eco-impact metrics.",
+      research: "Conducting user research on Gen Z fashion habits, discovering key motivators around unique aesthetic self-expression, price sensitivity, and environmental responsibility.",
+      prdHighlights: [
+        "Defining core user personas: Eco-Conscious Trendsetter, Conscious Bargain Hunter, and Local Upcycler/Designer.",
+        "Scoping 4 core MVP modules: Upcycled Collection Discovery, Trade-in & Garment Valuation Flow, Designer Collaboration Portal, and Eco-Impact Dashboard.",
+        "Mapping user stories with explicit acceptance criteria for garment condition rating & sizing standardization.",
+        "Designing Figma UI wireframes for seamless trade-in booking and interactive upcycled product story cards."
+      ],
+      impact: "PRD & Prototyping Phase — Pre-MVP User Testing & Wireframe Prototyping in progress."
     }
   },
   {
@@ -158,19 +193,6 @@ export const projectsList = [
     status: "🟡 Coming Soon",
     tags: ["TEARDOWN", "STRATEGY"],
     shortDesc: "Deep-dive UX gap analysis and strategy teardown of an AI product.",
-    isPlaceholder: true,
-    ctaText: "In Progress"
-  },
-  {
-    id: "case-study-placeholder",
-    icon: "⚡",
-    title: "0→1 Case Study 1",
-    subtitle: "Comprehensive Product Case Study",
-    type: "⚡ Interactive Prototype",
-    categories: ["All", "Case Studies"],
-    status: "🟡 Coming Soon",
-    tags: ["CASE STUDY", "0→1 STRATEGY"],
-    shortDesc: "Currently building a high-fidelity interactive prototype focused on AI workflow design.",
     isPlaceholder: true,
     ctaText: "In Progress"
   }
