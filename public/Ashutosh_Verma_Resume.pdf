@@ -1,20 +1,65 @@
 %PDF-1.4
 1 0 obj <</Type /Catalog /Pages 2 0 R>> endobj
 2 0 obj <</Type /Pages /Kids [3 0 R] /Count 1>> endobj
-3 0 obj <</Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
-4 0 obj <</Length 115>> stream
-BT /F1 24 Tf 50 700 Td (Ashutosh Verma - Product Manager Resume) Tj /F1 12 Tf 0 -30 Td (Email: azhutosh.verma32@gmail.com) Tj ET
+3 0 obj <</Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> >> endobj
+4 0 obj <</Length 3092>> stream
+
+BT
+/F2 22 Tf 50 750 Td (ASHUTOSH VERMA) Tj
+/F1 10 Tf 0 -18 Td (Product Management | AI Products | Customer Discovery | Product Strategy) Tj
+/F1 9 Tf 0 -14 Td (Noida, UP | +91 6370064577 | azhutosh.verma32@gmail.com | LinkedIn: ashutosh-verma-pm) Tj
+
+/F2 12 Tf 0 -30 Td (SUMMARY) Tj
+/F1 9.5 Tf 0 -15 Td (Aspiring Product Manager with entrepreneurial experience building AI and consumer products from 0->1.) Tj
+/F1 9.5 Tf 0 -12 Td (Hands-on experience in customer discovery, user research, PRD writing, wireframing, feature prioritization,) Tj
+/F1 9.5 Tf 0 -12 Td (and cross-functional execution across AI healthcare and marketplace startups.) Tj
+
+/F2 12 Tf 0 -25 Td (EXPERIENCE) Tj
+/F2 10.5 Tf 0 -15 Td (Cati AI - Noida, UP) Tj
+/F3 9.5 Tf 0 -12 Td (Product & Strategy Associate | Founding Team  [Nov 2025 - Present]) Tj
+/F1 9 Tf 0 -13 Td (. Led customer discovery across 12 pilot healthcare providers, synthesizing user insights into 6 recurring product opportunities.) Tj
+/F1 9 Tf 0 -11 Td (. Partnered with founders to prioritize 18+ feature requests into 7 MVP features using impact-effort analysis.) Tj
+/F1 9 Tf 0 -11 Td (. Authored 5 PRDs, 30+ user stories, acceptance criteria, and workflow documentation across appointment booking & AI chats.) Tj
+/F1 9 Tf 0 -11 Td (. Designed 10+ wireframes spanning 4 critical user journeys in Figma.) Tj
+/F1 9 Tf 0 -11 Td (. Coordinated User Acceptance Testing (UAT), documented usability issues, and prioritized fixes.) Tj
+
+/F2 10.5 Tf 0 -18 Td (Secret Private Cafe - Bhubaneswar, India) Tj
+/F3 9.5 Tf 0 -12 Td (Operations & Customer Experience Associate  [May 2023 - Oct 2025]) Tj
+/F1 9 Tf 0 -13 Td (. Managed customer experience for hospitality startup serving 50+ guests weekly.) Tj
+/F1 9 Tf 0 -11 Td (. Identified operational bottlenecks through guest feedback, reducing wait times by 20-25%.) Tj
+/F1 9 Tf 0 -11 Td (. Established structured customer feedback process to continuously improve experience.) Tj
+
+/F2 10.5 Tf 0 -18 Td (Pie Rooms - Bhubaneswar, India) Tj
+/F3 9.5 Tf 0 -12 Td (Business Operations & Growth Associate  [July 2022 - Apr 2023]) Tj
+/F1 9 Tf 0 -13 Td (. Supported growth of room-booking marketplace from 200 to 600 monthly bookings.) Tj
+/F1 9 Tf 0 -11 Td (. Analysed customer behaviour and pricing experiments to improve acquisition and repeat bookings.) Tj
+
+/F2 12 Tf 0 -25 Td (PROJECTS & EDUCATION) Tj
+/F2 10.5 Tf 0 -15 Td (Jananivaani - Masai x BITSoM Capstone  [Nov 2025 - June 2026]) Tj
+/F1 9 Tf 0 -12 Td (. AI-powered multilingual healthcare platform addressing information gaps among underserved communities.) Tj
+/F1 9 Tf 0 -11 Td (. Authored PRD, 30+ user stories, and designed 20+ Figma screens across voice and text experiences.) Tj
+
+/F2 10.5 Tf 0 -18 Td (Education & Certifications) Tj
+/F1 9 Tf 0 -12 Td (. Masai x BITSoM: Product Management (Agentic & Generative AI) - Score: 94% [Certificate of Excellence]) Tj
+/F1 9 Tf 0 -11 Td (. University of Jammu: M.Sc. Biotechnology (CGPA: 8.875) - GAT-B AIR 96 Recipient) Tj
+/F1 9 Tf 0 -11 Td (. Kirori Mal College, University of Delhi: B.Sc. Botany (CGPA: 7.50)) Tj
+ET
+
 endstream endobj
 5 0 obj <</Type /Font /Subtype /Type1 /BaseFont /Helvetica>> endobj
+6 0 obj <</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold>> endobj
+7 0 obj <</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique>> endobj
 xref
-0 6
+0 8
 0000000000 65535 f 
 0000000009 00000 n 
 0000000056 00000 n 
 0000000111 00000 n 
-0000000238 00000 n 
-0000000404 00000 n 
-trailer <</Size 6 /Root 1 0 R>>
+0000000252 00000 n 
+0000000250 00000 n 
+0000000300 00000 n 
+0000000350 00000 n 
+trailer <</Size 8 /Root 1 0 R>>
 startxref
-473
+420
 %%EOF

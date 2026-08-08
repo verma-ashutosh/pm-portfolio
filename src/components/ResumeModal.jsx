@@ -96,7 +96,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
                 </p>
                 <p className="flex items-center gap-1.5 sm:justify-end">
                   <Linkedin className="w-3.5 h-3.5 text-slate-400" />
-                  <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="hover:underline">linkedin.com/in/ashutosh-verma-pm</a>
+                  <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/ashutosh-verma-pm</a>
                 </p>
               </div>
             </div>

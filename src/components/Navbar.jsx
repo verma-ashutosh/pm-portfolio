@@ -189,24 +189,19 @@ export const Navbar = ({ onOpenResume }) => {
               </a>
             ))}
           </div>
-          <div className="pt-2 border-t border-slate-200 dark:border-slate-800">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenResume();
-              }}
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-bold text-white shadow-md"
-              style={{
-                backgroundColor: '#1E1B4B',
-                border: '1px solid #8B5CF6'
-              }}
+            <a
+              href="/Ashutosh_Verma_Resume.pdf"
+              download="Ashutosh_Verma_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-bold text-white bg-slate-900 dark:bg-slate-800 border border-[#10B981] shadow-md hover:bg-[#10B981] transition-all cursor-pointer"
             >
-              <FileText className="w-4 h-4 text-[#8B5CF6]" />
+              <FileText className="w-4 h-4 text-[#10B981]" />
               <span>Download CV</span>
-            </button>
+            </a>
           </div>
-        </div>
-      )}
-    </header>
+        )}
+      </header>
   );
 };

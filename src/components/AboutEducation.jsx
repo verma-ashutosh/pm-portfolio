@@ -64,7 +64,7 @@ export const AboutEducation = ({ onOpenResume }) => {
                   
                   {/* Clickable Link: Masai × BITSoM */}
                   <a 
-                    href="https://www.linkedin.com/in/ashutosh-verma-6688261b0/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY" 
+                    href="https://www.linkedin.com/in/ashutosh-verma-pm/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="group block text-[11px] text-slate-900 dark:text-white leading-snug font-bold hover:text-[#059669] transition-colors"
@@ -216,7 +216,7 @@ export const AboutEducation = ({ onOpenResume }) => {
                 
                 {/* Card 1: Masai × BITSoM */}
                 <a 
-                  href="https://www.linkedin.com/in/ashutosh-verma-6688261b0/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY" 
+                  href="https://www.linkedin.com/in/ashutosh-verma-pm/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group relative bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 shadow-sm hover:-translate-y-1.5 hover:shadow-lg hover:border-[#10B981] transition-all duration-300 ease-out cursor-pointer space-y-2.5 flex flex-col justify-between overflow-hidden"

@@ -56,29 +56,49 @@ export const Footer = ({ onOpenResume }) => {
           </div>
 
           {/* Primary Interactive CTAs */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <div className="flex flex-wrap items-center justify-center gap-3.5 pt-2">
             
             {/* Button 1: Start a Conversation */}
-            <button
-              onClick={handleCopyAndMail}
-              className="bg-gradient-to-r from-[#10B981] to-[#059669] hover:from-emerald-500 hover:to-emerald-600 text-white font-black text-sm px-7 py-4 rounded-full shadow-lg shadow-emerald-500/25 hover:scale-105 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer flex items-center gap-2.5 group"
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="bg-gradient-to-r from-[#10B981] to-[#059669] hover:from-emerald-500 hover:to-emerald-600 text-white font-black text-sm px-6 py-3.5 rounded-full shadow-lg shadow-emerald-500/25 hover:scale-105 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer flex items-center gap-2 group"
             >
               <Zap className="w-4 h-4 text-amber-300" />
-              <span>{copied ? 'Email copied!' : '⚡ Start a Conversation'}</span>
+              <span>⚡ Start a Conversation</span>
+              <Send className="w-3.5 h-3.5 opacity-80 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+
+            {/* Button 2: Copy Email Address */}
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(personalInfo.email);
+                setCopied(true);
+                confetti({ particleCount: 35, spread: 50, origin: { y: 0.85 } });
+                setTimeout(() => setCopied(false), 2500);
+              }}
+              className="bg-[#1E293B] text-white border border-slate-700 hover:border-[#10B981] font-extrabold text-sm px-6 py-3.5 rounded-full shadow-md hover:scale-105 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer flex items-center gap-2 group"
+              title="Copy Email Address to Clipboard"
+            >
               {copied ? (
-                <Check className="w-4 h-4 text-white" />
+                <>
+                  <Check className="w-4 h-4 text-emerald-400 animate-bounce" />
+                  <span className="text-emerald-400">Email Copied!</span>
+                </>
               ) : (
-                <Send className="w-3.5 h-3.5 opacity-80 group-hover:translate-x-0.5 transition-transform" />
+                <>
+                  <Copy className="w-4 h-4 text-[#10B981]" />
+                  <span>Copy Email</span>
+                </>
               )}
             </button>
 
-            {/* Button 2: Grab My Resume */}
+            {/* Button 3: Grab My Resume */}
             <a
               href="/Ashutosh_Verma_Resume.pdf"
               download="Ashutosh_Verma_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1E293B] text-white border border-slate-700 hover:border-[#10B981] font-extrabold text-sm px-7 py-4 rounded-full shadow-md hover:scale-105 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer flex items-center gap-2.5 group"
+              className="bg-[#1E293B] text-white border border-slate-700 hover:border-[#10B981] font-extrabold text-sm px-6 py-3.5 rounded-full shadow-md hover:scale-105 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer flex items-center gap-2 group"
             >
               <FileText className="w-4 h-4 text-[#10B981]" />
               <span>📄 Grab My Resume</span>

@@ -150,18 +150,36 @@ export const Hero = ({ onOpenResume }) => {
 
                 <div className="flex items-center gap-2 sm:gap-2.5">
                   <a
-                    href="mailto:azhutosh.verma32@gmail.com"
-                    className="p-2.5 rounded-full bg-slate-900 text-white hover:bg-emerald-600 border border-slate-800 shadow-xs hover:shadow-md hover:scale-110 hover:-translate-y-0.5 transition-all"
-                    title="Email: azhutosh.verma32@gmail.com"
+                    href={`mailto:${personalInfo.email}`}
+                    className="p-2.5 rounded-full bg-slate-900 text-white hover:bg-emerald-600 border border-slate-800 shadow-xs hover:shadow-md hover:scale-110 hover:-translate-y-0.5 transition-all cursor-pointer"
+                    title={`Send Email to ${personalInfo.email}`}
                   >
                     <Mail className="w-4 h-4 text-white" />
                   </a>
+
+                  <button
+                    onClick={handleCopyEmail}
+                    className="relative flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-slate-900 text-xs font-bold text-slate-200 hover:text-white hover:bg-emerald-600 border border-slate-800 shadow-xs hover:shadow-md hover:scale-105 hover:-translate-y-0.5 transition-all cursor-pointer"
+                    title="Copy Email Address"
+                  >
+                    {emailCopied ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-300 animate-bounce" />
+                        <span className="text-emerald-300 font-extrabold">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5 text-emerald-400" />
+                        <span>Copy Email</span>
+                      </>
+                    )}
+                  </button>
 
                   <a
                     href={personalInfo.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-full bg-slate-900 text-white hover:bg-emerald-600 border border-slate-800 shadow-xs hover:shadow-md hover:scale-110 hover:-translate-y-0.5 transition-all"
+                    className="p-2.5 rounded-full bg-slate-900 text-white hover:bg-emerald-600 border border-slate-800 shadow-xs hover:shadow-md hover:scale-110 hover:-translate-y-0.5 transition-all cursor-pointer"
                     title="LinkedIn Profile"
                   >
                     <Linkedin className="w-4 h-4 text-white" />

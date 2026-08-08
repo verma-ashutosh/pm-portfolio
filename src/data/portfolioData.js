@@ -14,7 +14,7 @@ export const personalInfo = {
   bioQuote: "I combine deep customer discovery with structured framework thinking (MoSCoW, ERRC, SCAMPER) to turn ambiguous user problems into validated MVP features.",
   location: "Noida, UP",
   email: "azhutosh.verma32@gmail.com",
-  linkedin: "https://www.linkedin.com/in/ashutosh-verma-6688261b0",
+  linkedin: "https://www.linkedin.com/in/ashutosh-verma-pm",
   github: "https://github.com/azhutosh-verma",
   statsCard: [
     { label: "GAT-B Rank", value: "AIR 96" },
@@ -51,7 +51,7 @@ export const metricsGrid = [
     value: "94%",
     title: "BITSoM Capstone Score",
     hoverDetail: "Certificate of Excellence (94% Score) – Masai × BITSoM PM",
-    certUrl: "https://www.linkedin.com/in/ashutosh-verma-6688261b0/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY",
+    certUrl: "https://www.linkedin.com/in/ashutosh-verma-pm/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY",
     icon: "Award"
   }
 ];
@@ -64,7 +64,7 @@ export const educationList = [
     period: "Nov 2025 – Jul 2026",
     score: "🏅 Certificate of Excellence (94% Score)",
     badge: "94% Score",
-    link: "https://www.linkedin.com/in/ashutosh-verma-6688261b0/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY",
+    link: "https://www.linkedin.com/in/ashutosh-verma-pm/overlay/Position/2767935916/treasury/?profileId=ACoAADE-bjABLuw06kN64POkD8LMs5yo4WfonjY",
     highlights: ["Capstone Project: Jananivaani AI Assistant", "Structured Frameworks: MoSCoW, ERRC, SCAMPER", "Agentic AI & Prompt Engineering Workflows"]
   },
   {
