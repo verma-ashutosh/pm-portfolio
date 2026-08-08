@@ -15,7 +15,7 @@ export const Projects = () => {
     return project.categories?.includes(activeTab);
   });
 
-  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
+  const displayedProjects = filteredProjects;
 
   const handleTabChange = (category) => {
     setActiveTab(category);
