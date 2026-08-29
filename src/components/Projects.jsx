@@ -60,30 +60,22 @@ export const Projects = () => {
         </div>
 
         {/* Projects Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {displayedProjects.map((project) => {
-            const isPlaceholder = project.isPlaceholder;
+            const isDisabled = project.isDisabled || project.ctaUrl === '#';
 
             return (
               <div
                 key={project.id}
                 style={{ willChange: 'transform' }}
-                className="rounded-3xl p-6 sm:p-7 bg-[#1E293B] text-white border border-[#334155] shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:border-[#10B981]/80 hover:shadow-[0_12px_30px_-5px_rgba(16,185,129,0.35)] flex flex-col justify-between group relative"
+                className="rounded-2xl p-6 bg-[#1E293B] text-white border border-[#334155] shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:border-[#10B981]/80 hover:shadow-[0_12px_28px_-5px_rgba(16,185,129,0.3)] flex flex-col justify-between group relative"
               >
                 <div>
-                  {/* Top Type Badge, Reading Time & Status */}
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wide px-3 py-1 rounded-full bg-slate-900 text-emerald-300 border border-slate-700 flex items-center gap-1.5">
-                        {project.icon && <span>{project.icon}</span>}
-                        <span>{project.type}</span>
-                      </span>
-                      {project.readTime && (
-                        <span className="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
-                          {project.readTime}
-                        </span>
-                      )}
-                    </div>
+                  {/* Top Type Badge & Status */}
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wide px-3 py-1 rounded-full bg-slate-900 text-emerald-300 border border-slate-700 flex items-center gap-1.5">
+                      <span>{project.type}</span>
+                    </span>
                     {project.status && (
                       <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-amber-950/80 text-amber-300 border border-amber-800/60">
                         {project.status}
@@ -91,60 +83,50 @@ export const Projects = () => {
                     )}
                   </div>
 
-                  {/* Title */}
-                  <h3 className="font-heading font-black text-xl text-white mb-2 group-hover:text-emerald-300 transition-colors leading-snug">
+                  {/* Clean Minimalist Title */}
+                  <h3 className="font-heading font-bold text-base sm:text-lg text-white mb-2 group-hover:text-emerald-300 transition-colors leading-snug">
                     {project.title}
                   </h3>
 
-                  {/* Badges / Tags */}
-                  <div className="flex flex-wrap gap-1.5 mb-4">
-                    {project.tags.map((tag, tIdx) => (
+                  {/* 1-2 Small Tag Pills */}
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {project.tags.slice(0, 2).map((tag, tIdx) => (
                       <span
                         key={tIdx}
-                        className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-800 text-emerald-200 border border-slate-700 uppercase tracking-wider"
+                        className="text-[10px] font-semibold px-2.5 py-0.5 rounded-md bg-slate-800 text-emerald-200/90 border border-slate-700/80"
                       >
-                        [{tag}]
+                        {tag}
                       </span>
                     ))}
                   </div>
 
-                  {/* Description */}
-                  <p className="text-xs text-slate-300 leading-relaxed mb-5 font-medium">
+                  {/* Crisp 1-Line Description */}
+                  <p className="text-xs text-slate-300 leading-relaxed font-normal mb-5">
                     {project.shortDesc}
                   </p>
-
-                  {/* Document-Verified Key Highlights */}
-                  {project.highlights && (
-                    <div className="space-y-2 mb-6 pt-4 border-t border-slate-700/80">
-                      <span className="text-[10px] font-extrabold text-[#10B981] uppercase tracking-widest block mb-1">
-                        Key Deliverables:
-                      </span>
-                      {project.highlights.map((item, hIdx) => (
-                        <p key={hIdx} className="text-xs text-slate-200 leading-relaxed font-normal">
-                          {item}
-                        </p>
-                      ))}
-                    </div>
-                  )}
                 </div>
 
                 {/* Primary CTA Button */}
-                <div className="pt-4 border-t border-slate-700/80 mt-4">
-                  {!isPlaceholder ? (
-                    <button
-                      onClick={() => setSelectedProject(project)}
-                      className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-[#10B981] to-[#059669] text-white text-xs font-extrabold hover:from-emerald-500 hover:to-emerald-600 shadow-md hover:shadow-emerald-500/30 transition-all flex items-center justify-center gap-2 group/btn cursor-pointer"
+                <div className="pt-3 border-t border-slate-700/80 mt-2">
+                  {!isDisabled && project.ctaUrl && project.ctaUrl !== '#' ? (
+                    <a
+                      href={project.ctaUrl}
+                      target={project.isExternal ? "_blank" : "_self"}
+                      rel={project.isExternal ? "noopener noreferrer" : ""}
+                      className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#10B981] to-[#059669] text-white text-xs font-bold hover:from-emerald-500 hover:to-emerald-600 shadow-sm transition-all flex items-center justify-center gap-2 group/btn cursor-pointer"
                     >
                       <span>{project.ctaText}</span>
-                      <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                    </button>
+                      <ArrowUpRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                    </a>
                   ) : (
                     <button
                       disabled
-                      className="w-full py-3 px-4 rounded-2xl bg-slate-800/80 text-slate-400 text-xs font-bold border border-slate-700/60 cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full py-2.5 px-4 rounded-xl bg-slate-800/60 text-slate-400 text-xs font-semibold border border-slate-700/50 cursor-not-allowed flex items-center justify-center gap-1.5"
                     >
-                      <Clock className="w-3.5 h-3.5 text-amber-400" />
-                      <span>[{project.ctaText}]</span>
+                      {project.ctaText === 'Coming Soon' && (
+                        <Clock className="w-3 h-3 text-amber-400" />
+                      )}
+                      <span>{project.ctaText}</span>
                     </button>
                   )}
                 </div>

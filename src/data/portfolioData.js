@@ -105,96 +105,134 @@ export const currentFocus = [
 ];
 
 export const projectsList = [
+  // ========================================================
+  // 1. PROJECTS (Category: "Projects")
+  // ========================================================
   {
-    id: "jananivaani",
-    icon: "💜",
-    title: "Jananivaani — Multilingual Healthcare Assistant",
-    subtitle: "Masai × BITSoM Capstone Project",
-    type: "📊 Slide Deck (9-10 Slides)",
-    readTime: "⚡ 2 min read",
-    categories: ["All", "Projects", "Case Studies"],
-    tags: ["0→1 SCOPE", "HEALTHCARE AI", "SLIDE DECK"],
-    frameworks: ["MoSCoW Prioritization", "ERRC Grid", "SCAMPER", "User Journey Mapping", "Impact-Effort Matrix"],
-    shortDesc: "0→1 discovery & product strategy for a voice-first AI maternal health assistant in rural EAG states—eliminating text literacy & language barriers.",
-    highlights: [
-      "🎯 Problem & Users: Solved long clinic waiting times & low literacy by mapping 3 core personas (Mothers, Family Caregivers, ASHA Workers).",
-      "📐 PRD & Strategy: Authored PRD v1.0, MoSCoW matrix, 16+ user stories, & Green/Yellow/Red symptom triage logic.",
-      "🎨 Figma Wireframing: Designed 20+ interactive screens for Voice Assistant, Care Checklists, Emergency Help, and ASHA dashboards."
-    ],
-    isPlaceholder: false,
-    ctaText: "📖 View Case Study",
-    fullDetails: {
-      problem: "Patients in Tier 2/3 regions face language barriers, fragmented medical history tracking, and lack of timely symptom guidance leading to delayed care.",
-      solution: "An AI-first voice and text conversational assistant supporting regional Indian languages with structured guidance, appointment logging, and maternal health tracking.",
-      research: "Interviews with 15+ community members and healthcare workers revealed key bottlenecks in reading prescription notes and understanding dosage guidelines.",
-      prdHighlights: [
-        "Authored comprehensive PRD covering 4 MVP workflows: Maternal Care, Symptom Assessment, Clinic Finder, and Multilingual Audio Prompts.",
-        "Created 30+ granular User Stories with explicit acceptance criteria.",
-        "Designed 20+ low & high-fidelity Figma screens with intuitive voice-first UI triggers.",
-        "Applied ERRC grid to eliminate redundant steps, reduce onboarding friction, raise regional language support, and create voice-native AI responses."
-      ],
-      impact: "Rated 94% in BITSoM Capstone evaluations; benchmarked for fast user comprehension in user testing."
-    }
+    id: "jananivaani-project",
+    title: "Jananivaani — Multilingual Healthcare Assistant (AI-driven healthcare for pregnant women)",
+    type: "⚡ Live MVP",
+    categories: ["All", "Projects"],
+    tags: ["0→1 Healthcare AI", "Live MVP"],
+    shortDesc: "Voice-first AI maternal health assistant bridging literacy and language barriers in regional healthcare.",
+    ctaText: "View Live MVP",
+    ctaUrl: "https://jananivaani.lovable.app/",
+    isExternal: true,
+    isDisabled: false
   },
   {
-    id: "vastrai",
-    icon: "🌱",
-    title: "Vastrai — Upcycled Fashion Platform",
-    subtitle: "Sustainable Circular E-Commerce for Gen Z & Millennials",
-    type: "♻️ Circular Fashion PRD",
-    readTime: "⚡ 2 min preview",
-    categories: ["All", "Projects", "Case Studies"],
-    status: "🟢 PRD & Prototyping Phase",
-    tags: ["SUSTAINABILITY", "CIRCULAR E-COMMERCE", "UX & PRD"],
-    frameworks: ["User Research & Personas", "Sustainable Value Chain", "MoSCoW Prioritization", "User Journey Mapping", "Figma Prototyping"],
-    shortDesc: "A circular fashion platform aimed at reducing textile waste by offering upcycled, trendy clothing tailored for Gen Z and Millennial consumers.",
-    highlights: [
-      "🌱 Sustainability & Gen Z Focus: Making circular fashion accessible, trendy, and affordable through curated upcycling.",
-      "📄 PRD & Workflows: Authoring sustainable purchasing, garment trade-in rewards, and upcycling verification workflows.",
-      "🎨 Interactive Wireframes: Designing low & high-fidelity Figma screens for upcycled collection discovery & trade-in tracking."
-    ],
-    isPlaceholder: false,
-    ctaText: "🔍 View Case Study Preview",
-    figmaEmbedUrl: "",
-    prototypeUrl: "",
-    fullDetails: {
-      problem: "Massive textile waste in fast fashion combined with Gen Z & Millennial demand for sustainable, affordable, and unique apparel without eco-guilt.",
-      solution: "Vastrai bridges the gap with a curated circular marketplace offering verified upcycled garments, effortless trade-in rewards, and transparent eco-impact metrics.",
-      research: "Conducting user research on Gen Z fashion habits, discovering key motivators around unique aesthetic self-expression, price sensitivity, and environmental responsibility.",
-      prdHighlights: [
-        "Defining core user personas: Eco-Conscious Trendsetter, Conscious Bargain Hunter, and Local Upcycler/Designer.",
-        "Scoping 4 core MVP modules: Upcycled Collection Discovery, Trade-in & Garment Valuation Flow, Designer Collaboration Portal, and Eco-Impact Dashboard.",
-        "Mapping user stories with explicit acceptance criteria for garment condition rating & sizing standardization.",
-        "Designing Figma UI wireframes for seamless trade-in booking and interactive upcycled product story cards."
-      ],
-      impact: "PRD & Prototyping Phase — Pre-MVP User Testing & Wireframe Prototyping in progress."
-    }
+    id: "khetify-project",
+    title: "Khetify",
+    type: "⚡ Live MVP",
+    categories: ["All", "Projects"],
+    tags: ["AgriTech", "Live MVP"],
+    shortDesc: "Smart agritech platform empowering farmers with real-time crop insights and agricultural advisory.",
+    ctaText: "View Live MVP",
+    ctaUrl: "https://verma-ashutosh.github.io/Khetify/",
+    isExternal: true,
+    isDisabled: false
   },
   {
-    id: "prototype-placeholder",
-    icon: "⚡",
-    title: "0→1 Interactive Workflow Prototype",
-    subtitle: "High-Fidelity AI Workflow Prototype",
-    type: "⚡ Interactive Prototype",
+    id: "project-coming-soon",
+    title: "Upcoming Project",
+    type: "⏳ In Development",
     categories: ["All", "Projects"],
     status: "🟡 Coming Soon",
-    tags: ["PROTOTYPE", "FIGMA"],
-    shortDesc: "Currently building a high-fidelity interactive prototype focused on AI workflow design.",
-    isPlaceholder: true,
-    ctaText: "In Progress"
+    tags: ["0→1 AI Product", "Coming Soon"],
+    shortDesc: "A new 0→1 product workflow and interactive AI experience currently in development.",
+    ctaText: "Coming Soon",
+    ctaUrl: "#",
+    isExternal: false,
+    isDisabled: true,
+    isPlaceholder: true
+  },
+
+  // ========================================================
+  // 2. CASE STUDIES (Category: "Case Studies")
+  // ========================================================
+  {
+    id: "jananivaani-case-study",
+    title: "Jananivaani",
+    type: "📊 Case Study",
+    categories: ["All", "Case Studies"],
+    tags: ["Product Strategy", "PRD"],
+    shortDesc: "Comprehensive product strategy, PRD v1.0, and user persona breakdown for maternal healthcare.",
+    ctaText: "View Deck",
+    ctaUrl: "#",
+    isExternal: false,
+    isDisabled: true
   },
   {
-    id: "teardown-placeholder",
-    icon: "💡",
-    title: "AI Product Strategy & UX Teardown",
-    subtitle: "Strategic Audit & UX Gap Analysis",
-    type: "💡 Product Teardown",
+    id: "khetify-case-study",
+    title: "Khetify",
+    type: "📊 Slide Deck (9-Slides)",
+    categories: ["All", "Case Studies"],
+    tags: ["Slide Deck", "Product Strategy"],
+    shortDesc: "9-slide strategic deck covering market analysis, user pain points, and product vision for Khetify.",
+    ctaText: "View Deck",
+    ctaUrl: "https://docs.google.com/presentation/d/1IoMNC0CkiaHwizaxSS6skFmrZIirQxR3/edit?usp=share_link",
+    isExternal: true,
+    isDisabled: false
+  },
+  {
+    id: "case-study-cs-1",
+    title: "Upcoming Case Study",
+    type: "📊 Case Study",
+    categories: ["All", "Case Studies"],
+    status: "🟡 Coming Soon",
+    tags: ["Case Study", "Coming Soon"],
+    shortDesc: "Deep-dive product strategy and end-to-end framework breakdown coming soon.",
+    ctaText: "Coming Soon",
+    ctaUrl: "#",
+    isExternal: false,
+    isDisabled: true,
+    isPlaceholder: true
+  },
+  {
+    id: "case-study-cs-2",
+    title: "Upcoming Case Study",
+    type: "📊 Case Study",
+    categories: ["All", "Case Studies"],
+    status: "🟡 Coming Soon",
+    tags: ["Case Study", "Coming Soon"],
+    shortDesc: "Comprehensive 0→1 feature specification and market opportunity breakdown coming soon.",
+    ctaText: "Coming Soon",
+    ctaUrl: "#",
+    isExternal: false,
+    isDisabled: true,
+    isPlaceholder: true
+  },
+
+  // ========================================================
+  // 3. PRODUCT TEARDOWNS (Category: "Product Teardowns")
+  // ========================================================
+  {
+    id: "teardown-1",
+    title: "AI Product Teardown 1",
+    type: "💡 UX Teardown",
     categories: ["All", "Product Teardowns"],
     status: "🟡 Coming Soon",
-    tags: ["TEARDOWN", "STRATEGY"],
-    shortDesc: "Deep-dive UX gap analysis and strategy teardown of an AI product.",
-    isPlaceholder: true,
-    ctaText: "In Progress"
+    tags: ["UX Teardown", "Coming Soon"],
+    shortDesc: "In-depth UX gap analysis, user funnel audit, and product teardown coming soon.",
+    ctaText: "Coming Soon",
+    ctaUrl: "#",
+    isExternal: false,
+    isDisabled: true,
+    isPlaceholder: true
+  },
+  {
+    id: "teardown-2",
+    title: "AI Product Teardown 2",
+    type: "💡 UX Teardown",
+    categories: ["All", "Product Teardowns"],
+    status: "🟡 Coming Soon",
+    tags: ["UX Teardown", "Coming Soon"],
+    shortDesc: "Strategic feature teardown, onboarding audit, and redesign recommendations coming soon.",
+    ctaText: "Coming Soon",
+    ctaUrl: "#",
+    isExternal: false,
+    isDisabled: true,
+    isPlaceholder: true
   }
 ];
 
