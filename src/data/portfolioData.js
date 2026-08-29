@@ -116,7 +116,7 @@ export const projectsList = [
     tags: ["0→1 Healthcare AI", "Live MVP"],
     shortDesc: "Voice-first AI maternal health assistant bridging literacy and language barriers in regional healthcare.",
     ctaText: "View Live MVP",
-    ctaUrl: "https://jananivaani.lovable.app/",
+    ctaUrl: "https://jananivaani.lovable.app/onboarding",
     isExternal: true,
     isDisabled: false
   },
