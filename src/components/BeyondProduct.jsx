@@ -17,61 +17,60 @@ export const BeyondProduct = () => {
     {
       icon: "🏋️",
       title: "Fitness & Daily Discipline",
-      badges: ["STRENGTH TRAINING", "CALCULATED NUTRITION", "HABITS"],
+      badges: ["STRENGTH TRAINING", "NUTRITION", "HABITS"],
       description: "Maintaining peak cognitive focus and physical endurance through structured strength training, self-designed nutrition, and daily routine tracking."
     }
   ];
 
   return (
-    <section id="beyond-product" className="py-20 bg-slate-50 dark:bg-[#0F172A] border-b border-slate-200 dark:border-slate-800">
+    <section id="beyond-product" className="py-24 bg-[#FAFAFA] text-[#18181B] border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header & Section Title */}
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-black uppercase tracking-widest text-emerald-800 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/80 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
+        <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span className="text-xs font-semibold uppercase tracking-widest text-slate-500">
             • BEYOND PRODUCT
           </span>
-          <h2 className="text-3xl sm:text-4xl font-heading font-black text-slate-900 dark:text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#18181B] tracking-tight">
             Beyond Product
           </h2>
-          <p className="text-sm font-medium text-slate-600 dark:text-slate-400 leading-relaxed">
+          <p className="text-sm font-normal text-slate-600 leading-relaxed">
             Where creativity, rhythm, and discipline fuel my product thinking.
           </p>
         </div>
 
-        {/* 3-Column Glassmorphism Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+        {/* 3-Column Pure White Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card, idx) => (
             <div
               key={idx}
-              style={{ willChange: 'transform' }}
-              className="rounded-3xl p-6 sm:p-7 bg-[#1E293B] text-white border border-[#334155] shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:border-[#10B981]/80 hover:shadow-[0_4px_20px_-2px_rgba(10,185,129,0.35)] flex flex-col justify-between group"
+              className="rounded-2xl p-6 bg-white text-[#18181B] border border-slate-200 flex flex-col justify-between hover:border-slate-300 transition-colors"
             >
               <div>
-                {/* Top Icon Squircle */}
-                <div className="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center text-2xl mb-5 shadow-inner">
+                {/* Top Icon */}
+                <div className="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-xl mb-4">
                   <span>{card.icon}</span>
                 </div>
 
                 {/* Card Title */}
-                <h3 className="font-heading font-black text-xl text-white mb-3 group-hover:text-emerald-300 transition-colors leading-snug">
+                <h3 className="font-bold text-base text-[#18181B] mb-2 leading-snug">
                   {card.title}
                 </h3>
 
                 {/* Micro Badges */}
-                <div className="flex flex-wrap gap-1.5 mb-4">
+                <div className="flex flex-wrap gap-1.5 mb-3">
                   {card.badges.map((badge, bIdx) => (
                     <span
                       key={bIdx}
-                      className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-800 text-emerald-200 border border-slate-700 uppercase tracking-wider"
+                      className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 border border-slate-200"
                     >
-                      [{badge}]
+                      {badge}
                     </span>
                   ))}
                 </div>
 
                 {/* Description */}
-                <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                <p className="text-xs text-slate-600 leading-relaxed font-normal">
                   {card.description}
                 </p>
               </div>

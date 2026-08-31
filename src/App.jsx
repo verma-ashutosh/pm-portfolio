@@ -17,7 +17,7 @@ export function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-slate-50 dark:bg-[#0F172A] text-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans">
+      <div className="min-h-screen bg-[#FAFAFA] text-[#18181B] font-sans selection:bg-slate-900 selection:text-white">
         {/* Navigation */}
         <Navbar onOpenResume={() => setResumeOpen(true)} />
 

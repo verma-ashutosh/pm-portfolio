@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 export const TickerBanner = () => {
   const tickerItems = [
@@ -12,27 +11,16 @@ export const TickerBanner = () => {
     "GAT-B AIR 96"
   ];
 
-  // Quadruple items to ensure seamless infinite looping animation
-  const repeatedItems = [...tickerItems, ...tickerItems, ...tickerItems, ...tickerItems];
-
   return (
-    <div className="w-full bg-slate-900 text-white py-3.5 overflow-hidden border-y border-slate-800 shadow-md">
-      <motion.div
-        className="flex whitespace-nowrap items-center gap-8"
-        animate={{ x: ['0%', '-50%'] }}
-        transition={{
-          repeat: Infinity,
-          ease: 'linear',
-          duration: 25,
-        }}
-      >
-        {repeatedItems.map((item, idx) => (
-          <div key={idx} className="flex items-center gap-4 shrink-0 text-xs sm:text-sm font-semibold tracking-wide text-slate-200">
-            <span className="text-emerald-400 font-bold">✦</span>
+    <div className="w-full bg-[#F4F4F5] border-y border-slate-200 py-3 overflow-x-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-6 overflow-x-auto text-xs font-semibold tracking-wide text-slate-700">
+        {tickerItems.map((item, idx) => (
+          <div key={idx} className="flex items-center gap-3 shrink-0">
+            <span className="text-slate-400 font-bold">•</span>
             <span>{item}</span>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
