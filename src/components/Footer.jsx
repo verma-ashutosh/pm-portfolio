@@ -16,11 +16,11 @@ export const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="py-14 bg-[#FAFAFA] text-[#18181B] border-t border-slate-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
+    <footer id="contact" className="py-14 bg-[#F4F5F7] text-[#18181B] border-t border-slate-200/80">
+      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 space-y-8">
         
         {/* Main Connect Box */}
-        <div className="bg-white border border-slate-200 rounded-xl p-6 text-center space-y-4">
+        <div className="bg-white border border-slate-200/90 rounded-xl p-6 text-center space-y-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
           <div>
             <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 block mb-1">
               • INITIATE CONTACT
@@ -37,7 +37,7 @@ export const Footer = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs font-semibold">
             <a
               href={`mailto:${personalInfo.email}`}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#18181B] text-white hover:bg-[#3F3F46] transition-colors"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#18181B] text-white hover:bg-[#3F3F46] transition-colors shadow-xs"
             >
               <Mail className="w-3.5 h-3.5 text-slate-300" />
               <span>{personalInfo.email}</span>
@@ -84,7 +84,7 @@ export const Footer = () => {
 
         {/* Footer Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-medium text-slate-500">
-          <p>© 2026 Ashutosh Verma. Early-career product professional portfolio.</p>
+          <p>© 2026 Ashutosh Verma. Founding Operator & APM Portfolio.</p>
           
           <button
             onClick={scrollToTop}

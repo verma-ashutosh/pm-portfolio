@@ -3,8 +3,8 @@ import { skillsMatrix } from '../data/portfolioData';
 
 export const SkillsMatrix = () => {
   return (
-    <section id="skills" className="py-14 bg-[#FAFAFA] text-[#18181B] border-b border-slate-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
+    <section id="skills" className="py-14 bg-[#F4F5F7] text-[#18181B] border-b border-slate-200/80">
+      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 space-y-8">
         
         {/* Header */}
         <div className="text-center max-w-xl mx-auto space-y-1">
@@ -20,7 +20,7 @@ export const SkillsMatrix = () => {
         </div>
 
         {/* Compact Categories */}
-        <div className="bg-white border border-slate-200 rounded-xl p-5 space-y-4">
+        <div className="bg-white border border-slate-200/90 rounded-xl p-5 space-y-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
           {skillsMatrix.map((group, gIdx) => (
             <div key={gIdx} className="space-y-2 pb-3 border-b border-slate-100 last:border-none last:pb-0">
               <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider">
@@ -30,7 +30,7 @@ export const SkillsMatrix = () => {
                 {group.skills.map((skill, sIdx) => (
                   <span
                     key={sIdx}
-                    className="px-3 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-medium border border-slate-200"
+                    className="px-3 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-medium border border-slate-200/60"
                   >
                     {skill}
                   </span>

@@ -4,18 +4,18 @@ import { GraduationCap, MapPin, Mail, Linkedin, CheckCircle2 } from 'lucide-reac
 
 export const AboutEducation = () => {
   return (
-    <section id="about" className="py-14 bg-[#FAFAFA] text-[#18181B] border-b border-slate-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-12">
+    <section id="about" className="py-14 bg-[#F4F5F7] text-[#18181B] border-b border-slate-200/80">
+      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 space-y-12">
         
         {/* About Grid: Left Profile Snapshot + Right Story */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           
           {/* Left Column: Compact Profile Card */}
-          <div className="md:col-span-4 bg-white border border-slate-200 rounded-xl p-5 space-y-4">
+          <div className="md:col-span-4 bg-white border border-slate-200/90 rounded-xl p-5 space-y-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
             <div>
               <h3 className="font-bold text-sm text-[#18181B]">Ashutosh Verma</h3>
               <p className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                Early-career product professional
+                Founding Operator | APM
               </p>
               <div className="flex items-center gap-1.5 text-xs text-slate-600 mt-1">
                 <MapPin className="w-3.5 h-3.5 text-slate-400" />
@@ -62,7 +62,7 @@ export const AboutEducation = () => {
                 • ABOUT ME
               </span>
               <h2 className="text-2xl font-extrabold text-[#18181B] tracking-tight mt-0.5">
-                Product Thinking & Craft
+                Product Thinking & Commercial Execution
               </h2>
             </div>
 
@@ -73,7 +73,7 @@ export const AboutEducation = () => {
             </div>
 
             {/* Current Focus Block */}
-            <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-2 mt-4">
+            <div className="bg-white border border-slate-200/90 rounded-xl p-4 space-y-2 mt-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
               <h4 className="font-bold text-xs text-[#18181B] uppercase tracking-wider flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-slate-700" />
                 Current Focus
@@ -92,7 +92,7 @@ export const AboutEducation = () => {
         </div>
 
         {/* Academic Qualifications */}
-        <div className="space-y-3 pt-4 border-t border-slate-200">
+        <div className="space-y-3 pt-4 border-t border-slate-200/80">
           <div className="flex items-center gap-2">
             <GraduationCap className="w-4 h-4 text-slate-700" />
             <h3 className="font-bold text-sm text-[#18181B]">
@@ -100,7 +100,7 @@ export const AboutEducation = () => {
             </h3>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-xl divide-y divide-slate-100">
+          <div className="bg-white border border-slate-200/90 rounded-xl divide-y divide-slate-100 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
             {educationList.map((edu, idx) => (
               <div key={idx} className="p-3.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
                 <div>

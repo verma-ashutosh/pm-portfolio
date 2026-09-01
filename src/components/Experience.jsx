@@ -4,8 +4,8 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-14 bg-[#FAFAFA] text-[#18181B] border-b border-slate-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
+    <section id="experience" className="py-14 bg-[#F4F5F7] text-[#18181B] border-b border-slate-200/80">
+      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 space-y-8">
         
         {/* Header */}
         <div className="text-center max-w-xl mx-auto space-y-1">
@@ -25,7 +25,7 @@ export const Experience = () => {
           {experienceList.map((exp, idx) => (
             <div
               key={idx}
-              className="bg-white border border-slate-200 rounded-xl p-5 space-y-3 hover:border-slate-300 transition-colors"
+              className="bg-white border border-slate-200/90 rounded-xl p-5 space-y-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:border-slate-300 transition-colors"
             >
               {/* Header Row */}
               <div className="flex flex-wrap items-start justify-between gap-2">
