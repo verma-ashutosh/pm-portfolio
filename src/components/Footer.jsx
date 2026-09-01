@@ -1,97 +1,100 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { Mail, Linkedin, Github, Copy, Check, ArrowUp } from 'lucide-react';
+import { Mail, FileText, Linkedin, Github } from 'lucide-react';
 
 export const Footer = () => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <footer id="contact" className="py-14 bg-[#F4F5F7] text-[#18181B] border-t border-slate-200/80">
+    <footer id="contact" className="py-14 bg-[#2D3748] text-white border-t border-[#4A5568]">
+      {/* Central 1200px container width */}
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 space-y-8">
         
-        {/* Main Connect Box */}
-        <div className="bg-white border border-slate-200/90 rounded-xl p-6 text-center space-y-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+        {/* Main Content Container (Center-aligned compact vertical height) */}
+        <div className="text-center max-w-2xl mx-auto space-y-4">
+          
+          {/* Top Tag */}
           <div>
-            <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 block mb-1">
-              • INITIATE CONTACT
+            <span className="px-3 py-1 rounded-full bg-[#1E293B] text-[#CBD5E1] text-xs font-bold uppercase tracking-wider inline-block border border-slate-600/80 mb-1">
+              • LET'S TALK
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#18181B] tracking-tight">
-              Let's Connect
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 font-normal mt-1 max-w-md mx-auto">
+          </div>
+
+          {/* Main Headline */}
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Building something impactful?
+          </h2>
+
+          {/* Sub-headline */}
+          <div className="space-y-2 text-xs sm:text-sm text-[#CBD5E1] font-medium leading-relaxed max-w-xl mx-auto">
+            <p>
               Happy to discuss Product Intern & APM roles, collaborations, or feedback on my case studies.
+            </p>
+            <p className="text-xs text-[#A0AEC0] font-semibold">
+              Noida-based · Open to Bengaluru · Noida · Gurugram · Hyderabad · Mumbai · Remote
             </p>
           </div>
 
-          {/* Simple Contact Links Line */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs font-semibold">
+          {/* Functional Buttons (Center-aligned flex row) */}
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            {/* Button 1: Email (Solid White) */}
             <a
               href={`mailto:${personalInfo.email}`}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#18181B] text-white hover:bg-[#3F3F46] transition-colors shadow-xs"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-[#1E293B] font-bold text-xs transition-colors cursor-pointer shadow-xs"
             >
-              <Mail className="w-3.5 h-3.5 text-slate-300" />
-              <span>{personalInfo.email}</span>
+              <Mail className="w-4 h-4 text-[#1E293B]" />
+              <span>Say Hello</span>
             </a>
 
-            <button
-              onClick={handleCopyEmail}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 transition-colors cursor-pointer"
+            {/* Button 2: Resume (Transparent + White Border) */}
+            <a
+              href={personalInfo.resumePdf}
+              download="Ashutosh-Verma-APM-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold text-xs transition-colors cursor-pointer"
             >
-              {copied ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-slate-900" />
-                  <span>Copied!</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Copy Email</span>
-                </>
-              )}
-            </button>
+              <FileText className="w-4 h-4 text-white" />
+              <span>Download Resume</span>
+            </a>
+          </div>
 
+          {/* Social Icons Row (Below main buttons) */}
+          <div className="flex items-center justify-center gap-3 pt-3">
             <a
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-slate-800 border border-slate-200 hover:bg-slate-50 transition-colors"
+              title="LinkedIn Profile"
+              className="w-10 h-10 rounded-xl bg-[#1E293B] hover:bg-[#334155] border border-[#4A5568] text-white flex items-center justify-center transition-colors cursor-pointer shadow-2xs"
             >
-              <Linkedin className="w-3.5 h-3.5 text-slate-600" />
-              <span>LinkedIn</span>
+              <Linkedin className="w-4 h-4" />
             </a>
 
             <a
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-slate-800 border border-slate-200 hover:bg-slate-50 transition-colors"
+              title="GitHub Profile"
+              className="w-10 h-10 rounded-xl bg-[#1E293B] hover:bg-[#334155] border border-[#4A5568] text-white flex items-center justify-center transition-colors cursor-pointer shadow-2xs"
             >
-              <Github className="w-3.5 h-3.5 text-slate-600" />
-              <span>GitHub</span>
+              <Github className="w-4 h-4" />
             </a>
           </div>
+
         </div>
 
-        {/* Footer Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-medium text-slate-500">
+        {/* Footer Bottom (Subtle Horizontal Divider) */}
+        <div className="pt-6 border-t border-[#4A5568] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#CBD5E1] font-medium">
           <p>© 2026 Ashutosh Verma. Founding Operator & APM Portfolio.</p>
-          
+
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 text-[#CBD5E1] hover:text-white transition-colors font-semibold cursor-pointer"
           >
-            <span>Back to top</span>
-            <ArrowUp className="w-3.5 h-3.5" />
+            <span>Back to top ↗</span>
           </button>
         </div>
 
