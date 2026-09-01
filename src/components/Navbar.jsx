@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { personalInfo } from '../data/portfolioData';
 import { Menu, X, FileText, ArrowUpRight } from 'lucide-react';
 
-export const Navbar = ({ onOpenResume }) => {
+export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
@@ -15,8 +15,8 @@ export const Navbar = ({ onOpenResume }) => {
         setIsScrolled(false);
       }
 
-      const sections = ['about', 'metrics', 'projects', 'experience', 'skills', 'beyond-product', 'contact'];
-      const scrollPosition = window.scrollY + 200;
+      const sections = ['about', 'product-work', 'experience', 'skills', 'contact'];
+      const scrollPosition = window.scrollY + 180;
 
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -37,10 +37,9 @@ export const Navbar = ({ onOpenResume }) => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'Product Work', href: '#product-work' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Beyond Product', href: '#beyond-product' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -48,13 +47,13 @@ export const Navbar = ({ onOpenResume }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-150 ${
         isScrolled
-          ? 'bg-[#FAFAFA]/90 backdrop-blur-sm border-b border-slate-200 py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-[#FAFAFA]/95 backdrop-blur-xs border-b border-slate-200 py-2.5'
+          : 'bg-transparent py-4'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         
-        {/* Brand Logo AV - Minimal Dark Charcoal Pill */}
+        {/* Brand Logo AV - Minimal Pill */}
         <a
           href={personalInfo.linkedin}
           target="_blank"
@@ -63,7 +62,7 @@ export const Navbar = ({ onOpenResume }) => {
           className="flex items-center group focus:outline-none cursor-pointer"
         >
           <span 
-            className="px-3.5 py-1 rounded-lg text-white font-mono font-bold text-sm tracking-wider bg-[#18181B] hover:bg-[#3F3F46] transition-colors duration-150 flex items-center justify-center"
+            className="px-3 py-1 rounded-md text-white font-mono font-bold text-xs tracking-wider bg-[#18181B] hover:bg-[#3F3F46] transition-colors duration-150 flex items-center justify-center"
           >
             AV
           </span>
@@ -77,7 +76,7 @@ export const Navbar = ({ onOpenResume }) => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-colors duration-150 ${
+                className={`px-3 py-1 rounded-full text-xs font-medium transition-colors duration-150 ${
                   isActive
                     ? 'bg-[#18181B] text-white'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
@@ -89,17 +88,17 @@ export const Navbar = ({ onOpenResume }) => {
           })}
         </nav>
 
-        {/* Right Section: Download CV Button */}
+        {/* Right Section: Download Resume Button */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/Ashutosh_Verma_Resume.pdf"
-            download="Ashutosh_Verma_Resume.pdf"
+            href={personalInfo.resumePdf}
+            download="Ashutosh-Verma-APM-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold text-white bg-[#18181B] hover:bg-[#3F3F46] transition-colors duration-150 cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-white bg-[#18181B] hover:bg-[#3F3F46] transition-colors duration-150 cursor-pointer"
           >
             <FileText className="w-3.5 h-3.5 text-slate-300" />
-            <span>Download CV</span>
+            <span>Download Resume</span>
             <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
           </a>
         </div>
@@ -108,7 +107,7 @@ export const Navbar = ({ onOpenResume }) => {
         <div className="flex md:hidden items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+            className="p-1.5 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -118,14 +117,14 @@ export const Navbar = ({ onOpenResume }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#FAFAFA] border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+        <div className="md:hidden bg-[#FAFAFA] border-b border-slate-200 px-4 pt-3 pb-5 space-y-2">
           <div className="flex flex-col space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100 transition-colors"
+                className="px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:bg-slate-100 transition-colors"
               >
                 {link.name}
               </a>
@@ -133,15 +132,15 @@ export const Navbar = ({ onOpenResume }) => {
           </div>
           <div className="pt-2 border-t border-slate-200">
             <a
-              href="/Ashutosh_Verma_Resume.pdf"
-              download="Ashutosh_Verma_Resume.pdf"
+              href={personalInfo.resumePdf}
+              download="Ashutosh-Verma-APM-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-white bg-[#18181B] hover:bg-[#3F3F46] transition-colors cursor-pointer"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-white bg-[#18181B] hover:bg-[#3F3F46] transition-colors cursor-pointer"
             >
               <FileText className="w-4 h-4 text-slate-300" />
-              <span>Download CV</span>
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
