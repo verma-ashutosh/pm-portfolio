@@ -151,37 +151,75 @@ export const allProductCards = [
 
 export const experienceList = [
   {
-    role: "Product & Strategy Associate (Founding Team)",
-    company: "Cati AI",
+    role: "Founding Product & Growth Manager (B2B Voice AI SaaS)",
+    company: "CATI.AI",
     location: "Noida, UP",
-    period: "Nov 2025 – Present",
-    badge: "Current Role",
+    period: "February 2026 – Present",
     bullets: [
-      "Customer Discovery: Spearheaded user discovery across 12+ healthcare pilot providers, synthesizing feedback into 6 validated product opportunities.",
-      "PRD & Specs: Authored 5+ end-to-end PRDs and 30+ detailed user stories with granular acceptance criteria for AI workflows.",
-      "Prioritization & Scope: Filtered 18+ customer feature requests into 7 high-impact MVP capabilities using Impact vs. Effort frameworks.",
-      "Execution & Prototyping: Designed 20+ Figma UI screens, coordinated engineering sprints, and led User Acceptance Testing (UAT)."
+      {
+        icon: "📝",
+        text: "Defined PRDs and end-to-end user flows for 3 vertical-specific Voice AI agents (Healthcare, Sales, Retention), integrating WhatsApp CRM to automate cohort-based outreach."
+      },
+      {
+        icon: "⚡️",
+        text: "Architected WhatsApp-to-Voice handoff workflows, slashing pilot client lead response times from <strong>~4 hours to <2 minutes</strong> and boosting lead qualification rates by <strong>20%</strong>."
+      },
+      {
+        icon: "🤝",
+        text: "Led product scoping for a B2B2B white-label offering, defining API/SDK integration specs and partner onboarding flows to close <strong>2 initial agency pilots</strong>."
+      },
+      {
+        icon: "📈",
+        text: "Established core AI efficacy metrics (<strong>Self-Service Resolution</strong>, <strong>Call Deflection</strong>) and refined conversational system prompts, elevating task completion rates by <strong>15%</strong>."
+      }
     ]
   },
   {
-    role: "Operations & Customer Experience Associate",
+    role: "Founding Operator: Growth & Strategy (Venue-on-Demand)",
     company: "Secret Private Cafe",
-    location: "Bhubaneswar",
+    location: "Bhubaneswar, OR",
     period: "May 2023 – Oct 2025",
     bullets: [
-      "Fulfillment Optimization: Mapped customer wait-time bottlenecks, successfully reducing order fulfillment latency by 20–25%.",
-      "Feedback Loops: Established structured customer feedback channels to drive iterative menu adjustments and boost repeat visits."
+      {
+        icon: "🚀",
+        text: "Scaled venue-on-demand venture from <strong>0 to 4 profitable outlets</strong>, achieving PMF by growing daily bookings from <strong>0 to 15 per outlet</strong> prior to a successful M&A exit."
+      },
+      {
+        icon: "📦",
+        text: "Productized the physical service into <strong>5 standardized \"plug-and-play\" event packages</strong>, minimizing user planning friction and lifting Average Order Value (AOV) by <strong>18%</strong>."
+      },
+      {
+        icon: "🎯",
+        text: "Directed hyper-local GTM and influencer acquisition campaigns, reducing Customer Acquisition Cost (CAC) by <strong>22%</strong> while maximizing local top-of-funnel reach."
+      },
+      {
+        icon: "⚙️",
+        text: "Authored operational SOPs and service blueprints for staff, decor, and inventory workflows, ensuring consistent UX and seamless M&A operational due diligence."
+      }
     ]
   },
   {
-    role: "Business Operations & Growth Associate",
+    role: "Founding Operator: Operations & User Growth (Hotel Tech)",
     company: "Pie Rooms",
-    location: "Bhubaneswar",
+    location: "Bhubaneswar, OR",
     period: "Jul 2022 – Apr 2023",
     bullets: [
-      "Booking Funnel Growth: Scaled monthly bookings 3x (from 200 to 600) via booking funnel UX optimization and partner expansion.",
-      "Partner Onboarding: Onboarded 25+ hospitality partners and standardized merchant check-in workflows.",
-      "Pricing Experiments: Executed targeted off-peak discount pricing experiments to maximize slot utilization rates."
+      {
+        icon: "📱",
+        text: "Managed digital growth and funnel optimization for a micro-stay hospitality platform across hourly and daily booking inventory models."
+      },
+      {
+        icon: "💎",
+        text: "Conceptualized and rolled out a tiered loyalty program, driving a <strong>25% lift in repeat bookings</strong> and shifting direct booking share away from high-fee OTAs."
+      },
+      {
+        icon: "💰",
+        text: "Introduced dynamic pricing logic for off-peak slots, boosting daytime inventory utilization by <strong>15%</strong> and maximizing Revenue Per Available Room (RevPAR)."
+      },
+      {
+        icon: "🎯",
+        text: "Executed hyper-targeted B2B and student acquisition loops, lowering blended CAC by <strong>20%</strong> compared to generic paid search ads."
+      }
     ]
   }
 ];
