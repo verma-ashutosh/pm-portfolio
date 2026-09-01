@@ -43,7 +43,7 @@ export const AboutEducation = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Briefcase className="w-4 h-4 text-slate-400 shrink-0" />
-                <span>CATI AI · Nov 2025–Present</span>
+                <span>CATI AI · February 2026–Present</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-slate-400 shrink-0" />

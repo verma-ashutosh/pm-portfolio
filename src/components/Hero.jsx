@@ -6,7 +6,7 @@ export const Hero = () => {
   const metricCards = [
     {
       company: "CATI AI",
-      title: "AI Voice Agents",
+      title: "CATI AI",
       subtitle: "B2B Voice AI SaaS",
       metric: "⏱️ <2 min lead response times"
     },
