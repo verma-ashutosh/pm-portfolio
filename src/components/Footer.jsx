@@ -51,7 +51,6 @@ export const Footer = () => {
             {/* Button 2: Resume (Transparent + White Border) */}
             <a
               href={personalInfo.resumePdf}
-              download="Ashutosh-Verma-APM-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold text-xs transition-colors cursor-pointer"

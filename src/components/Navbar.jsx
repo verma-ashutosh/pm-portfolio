@@ -91,7 +91,6 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <a
             href={personalInfo.resumePdf}
-            download="Ashutosh-Verma-APM-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#18181B] hover:bg-[#3F3F46] transition-colors duration-150 cursor-pointer shadow-xs"
@@ -131,7 +130,6 @@ export const Navbar = () => {
           <div className="pt-2 border-t border-slate-200/80">
             <a
               href={personalInfo.resumePdf}
-              download="Ashutosh-Verma-APM-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

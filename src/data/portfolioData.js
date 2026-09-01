@@ -6,7 +6,7 @@ export const personalInfo = {
   email: "azhutosh.verma32@gmail.com",
   linkedin: "https://www.linkedin.com/in/ashutosh-verma-pm",
   github: "https://github.com/verma-ashutosh",
-  resumePdf: "/Ashutosh-Verma-APM-Resume.pdf",
+  resumePdf: "https://drive.google.com/file/d/1LBTI5Jy-nutlZbDa8vT8UUuLsIEzUyU6/view?usp=sharing",
   valueStatement: "Proven 0-to-1 expert with 2 profitable exits. Bridging commercial viability (GTM, Unit Economics) and user-centric Product Management.",
   heroBullets: [
     "Product Teardowns: Zepto, Spotify, Notion",

@@ -69,7 +69,6 @@ export const Hero = () => {
               {/* Primary: Solid Black background, White text "Download Resume" */}
               <a
                 href={personalInfo.resumePdf}
-                download="Ashutosh-Verma-APM-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#18181B] text-white font-bold text-xs hover:bg-[#3F3F46] transition-colors duration-150 cursor-pointer shadow-xs"

@@ -56,7 +56,6 @@ export const AboutEducation = () => {
               {/* Button 1: Solid Black */}
               <a
                 href={personalInfo.resumePdf}
-                download="Ashutosh-Verma-APM-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-[#18181B] hover:bg-[#3F3F46] text-white font-bold text-xs transition-colors cursor-pointer shadow-xs"
