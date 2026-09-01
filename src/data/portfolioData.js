@@ -259,18 +259,24 @@ export const skillsMatrix = [
 
 export const beyondProductData = [
   {
+    id: "music-production",
     icon: "🎸",
-    title: "Music Production & Guitar",
-    description: "Former lead vocalist & guitarist for 'The Bloodywood'. Writing Hindi acoustic-pop & lofi tracks, learning production in FL Studio."
+    title: "Songwriting & Music Production",
+    description: "Former lead vocalist & guitarist for 'The Bloodywood'. Currently exploring emotional and melancholic themes through progressive Hindi acoustic-pop and lofi tracks. Crafting soundscapes and learning production in FL Studio.",
+    glowStyle: "hover:shadow-[0_10px_35px_rgba(168,85,247,0.22)] hover:border-purple-500/40"
   },
   {
+    id: "visual-art",
     icon: "🎨",
-    title: "Visual Sketching & Wireframing",
-    description: "Translating abstract product concepts onto paper through freehand sketching, visual art, and rapid UI layout brainstorming."
+    title: "Visual Art & Prototyping",
+    description: "Translating abstract concepts into high-fidelity visuals. Combining rapid UI wireframing with technical AI image and video generation, focusing on cinematic lighting and DSLR-level composition.",
+    glowStyle: "hover:shadow-[0_10px_35px_rgba(56,189,248,0.22)] hover:border-cyan-500/40"
   },
   {
-    icon: "🏋️",
+    id: "fitness-discipline",
+    icon: "🏋️‍♂️",
     title: "Fitness & Daily Discipline",
-    description: "Maintaining peak cognitive focus and endurance through structured strength training, nutrition, and habit tracking."
+    description: "Maintaining peak cognitive focus through structured weight training and a strictly calculated high-protein diet. Treating daily habits and endurance with the same rigorous tracking as product metrics.",
+    glowStyle: "hover:shadow-[0_10px_35px_rgba(249,115,22,0.22)] hover:border-orange-500/40"
   }
 ];
