@@ -1,13 +1,13 @@
 export const personalInfo = {
   name: "Ashutosh Verma",
-  role: "Early-career Product Professional",
-  targetRoles: "Open to Product Intern & APM Roles",
-  location: "Noida, Uttar Pradesh, India",
+  role: "Founding Operator | APM",
+  targetRoles: "Open to APM & Intern roles",
+  location: "Noida, India",
   email: "azhutosh.verma32@gmail.com",
   linkedin: "https://www.linkedin.com/in/ashutosh-verma-pm",
   github: "https://github.com/verma-ashutosh",
   resumePdf: "/Ashutosh-Verma-APM-Resume.pdf",
-  valueStatement: "Early-career product professional focused on data-informed experimentation, product teardowns, and building simple, high-impact experiences for users.",
+  valueStatement: "Proven 0-to-1 expert with 2 profitable exits. Bridging commercial viability (GTM, Unit Economics) and user-centric Product Management.",
   heroBullets: [
     "Product Teardowns: Zepto, Spotify, Notion",
     "Case Studies: Uber, Groww, Khetify",
@@ -22,9 +22,11 @@ export const personalInfo = {
 };
 
 export const aboutContent = {
-  paragraph1: "I am an early-career product professional based in Noida, India, open to Product Management Intern and Associate Product Manager roles. I am passionate about AI, consumer tech, and dissecting how digital products create habit-forming user experiences.",
-  paragraph2: "My work spans conducting end-to-end product teardowns (Zepto, Spotify, Notion) to analyze growth loops and UX friction, authoring strategic case studies (Uber, Groww, Khetify), and shipping live interactive products like Jananivaani (AI healthcare assistant) and Khetify (AgriTech platform).",
-  paragraph3: "I bring a structured analytical approach combined with user-centric discovery, rapid prototyping, and experimentation to convert complex user pain points into simple, high-impact features.",
+  headline: "I scale 0-to-1 businesses by bridging commercial viability with user-centric design.",
+  paragraph1: "I am a Founding Operator transitioning to an Associate Product Manager with a proven track record across B2B SaaS and O2O models, resulting in two profitable exits.",
+  paragraph2: "My work spans GTM strategy, unit economics, and conversational AI. At CATI AI, I define end-to-end user flows for vertical-specific Voice AI agents, slashing lead response times to under 2 minutes and boosting qualification rates.",
+  paragraph3: "I bring a structured analytical approach combined with user-centric discovery, leveraging my formal PM training to balance scalable tech capabilities with rigorous data-driven prioritization.",
+  footerLocationText: "Open to roles in Noida • Delhi NCR • Bengaluru • Remote.",
   bulletsCard: [
     "Product teardowns on Zepto, Spotify, Notion.",
     "Case studies: Uber, Groww, Khetify.",
@@ -153,22 +155,19 @@ export const experienceList = [
 
 export const educationList = [
   {
-    institution: "Masai × BITSoM",
-    program: "Product Management (Agentic & Generative AI)",
-    period: "Nov 2025 – Jul 2026",
-    details: "Certificate of Excellence — 94% Capstone Score"
+    institution: "Masai BITSOM",
+    program: "Executive Certificate - PM & Agentic AI",
+    period: "Dec 2025 - Jun 2026"
   },
   {
     institution: "University of Jammu",
     program: "M.Sc. Biotechnology",
-    period: "2023 – 2025",
-    details: "CGPA: 8.87 • GAT-B AIR 96 Recipient"
+    period: "2023 - 2025"
   },
   {
     institution: "Kirori Mal College, DU",
     program: "B.Sc. (Hons) Botany",
-    period: "2019 – 2022",
-    details: "CGPA: 7.50"
+    period: "2019 - 2022"
   }
 ];
 
