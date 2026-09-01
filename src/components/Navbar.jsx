@@ -51,10 +51,10 @@ export const Navbar = () => {
           : 'bg-transparent py-4'
       }`}
     >
-      {/* Full width stretching items to ends (max 5% side margins) */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex items-center justify-between">
+      {/* Central 1200px container width with even side margins */}
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 flex items-center justify-between">
         
-        {/* Left: Logo AV in dark rounded rectangle */}
+        {/* Left: Logo "AV" in dark rounded rectangle */}
         <a
           href={personalInfo.linkedin}
           target="_blank"
@@ -67,7 +67,7 @@ export const Navbar = () => {
           </span>
         </a>
 
-        {/* Center: Navigation Links */}
+        {/* Center: Links */}
         <nav className="hidden md:flex items-center space-x-1 p-1 rounded-full bg-white border border-slate-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
           {navLinks.map((link) => {
             const isActive = activeSection === link.href.substring(1);
@@ -87,7 +87,7 @@ export const Navbar = () => {
           })}
         </nav>
 
-        {/* Right: Solid black button Download CV with arrow icon */}
+        {/* Right: Solid black button "Download CV" with arrow icon */}
         <div className="hidden md:flex items-center gap-3">
           <a
             href={personalInfo.resumePdf}
@@ -115,7 +115,7 @@ export const Navbar = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#F4F5F7] border-b border-slate-200/80 px-4 pt-3 pb-5 space-y-2">
+        <div className="md:hidden bg-[#F4F5F7] border-b border-slate-200/80 px-6 pt-3 pb-5 space-y-2">
           <div className="flex flex-col space-y-1">
             {navLinks.map((link) => (
               <a

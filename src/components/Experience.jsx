@@ -5,7 +5,7 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 export const Experience = () => {
   return (
     <section id="experience" className="py-14 bg-[#F4F5F7] text-[#18181B] border-b border-slate-200/80">
-      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 space-y-8">
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 space-y-8">
         
         {/* Header */}
         <div className="text-center max-w-xl mx-auto space-y-1">

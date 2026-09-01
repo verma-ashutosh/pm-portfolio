@@ -5,7 +5,7 @@ import { GraduationCap, MapPin, Mail, Linkedin, CheckCircle2 } from 'lucide-reac
 export const AboutEducation = () => {
   return (
     <section id="about" className="py-14 bg-[#F4F5F7] text-[#18181B] border-b border-slate-200/80">
-      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 space-y-12">
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 space-y-12">
         
         {/* About Grid: Left Profile Snapshot + Right Story */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
