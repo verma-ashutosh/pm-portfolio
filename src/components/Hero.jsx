@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { FileText, ArrowDown, Check } from 'lucide-react';
+import { FileText, ArrowDown } from 'lucide-react';
 
 export const Hero = () => {
   return (
@@ -15,7 +15,7 @@ export const Hero = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200">
               <span className="h-2 w-2 rounded-full bg-slate-700"></span>
               <span className="text-[11px] font-semibold text-slate-700 uppercase tracking-wide">
-                Associate Product Manager • Noida, UP, India
+                Open to Product Intern & APM Roles • Noida, UP, India
               </span>
             </div>
 
@@ -25,16 +25,16 @@ export const Hero = () => {
                 Ashutosh Verma
               </h1>
               <p className="text-base sm:text-lg font-bold text-slate-700 mt-1">
-                Associate Product Manager
+                Early-career product professional
               </p>
             </div>
 
-            {/* 1-2 Line Value Statement */}
+            {/* Value Statement */}
             <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed font-normal max-w-xl">
               {personalInfo.valueStatement}
             </p>
 
-            {/* 2-3 Short Bullets */}
+            {/* 3 Short Bullets */}
             <div className="space-y-1.5 pt-1 text-xs text-slate-700 font-medium">
               {personalInfo.heroBullets.map((bullet, idx) => (
                 <div key={idx} className="flex items-center gap-2">
@@ -73,7 +73,7 @@ export const Hero = () => {
             <div className="relative p-1 bg-white border border-slate-200 rounded-full shadow-2xs">
               <img
                 src="./avatar.jpg"
-                alt="Ashutosh Verma - Associate Product Manager"
+                alt="Ashutosh Verma - Early-career product professional"
                 className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover"
               />
             </div>

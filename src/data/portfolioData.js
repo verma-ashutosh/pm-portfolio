@@ -1,12 +1,13 @@
 export const personalInfo = {
   name: "Ashutosh Verma",
-  role: "Associate Product Manager",
+  role: "Early-career Product Professional",
+  targetRoles: "Open to Product Intern & APM Roles",
   location: "Noida, Uttar Pradesh, India",
   email: "azhutosh.verma32@gmail.com",
   linkedin: "https://www.linkedin.com/in/ashutosh-verma-pm",
   github: "https://github.com/verma-ashutosh",
   resumePdf: "/Ashutosh-Verma-APM-Resume.pdf",
-  valueStatement: "Early-career PM focused on data-informed experimentation, product teardowns, and building simple, high-impact experiences for users.",
+  valueStatement: "Early-career product professional focused on data-informed experimentation, product teardowns, and building simple, high-impact experiences for users.",
   heroBullets: [
     "Product Teardowns: Zepto, Spotify, Notion",
     "Case Studies: Uber, Groww, Khetify",
@@ -21,7 +22,7 @@ export const personalInfo = {
 };
 
 export const aboutContent = {
-  paragraph1: "I am an early-career Product Manager based in Noida, India, passionate about AI, consumer tech, and dissecting how great digital products create habit-forming user experiences.",
+  paragraph1: "I am an early-career product professional based in Noida, India, open to Product Management Intern and Associate Product Manager roles. I am passionate about AI, consumer tech, and dissecting how digital products create habit-forming user experiences.",
   paragraph2: "My work spans conducting end-to-end product teardowns (Zepto, Spotify, Notion) to analyze growth loops and UX friction, authoring strategic case studies (Uber, Groww, Khetify), and shipping live interactive products like Jananivaani (AI healthcare assistant) and Khetify (AgriTech platform).",
   paragraph3: "I bring a structured analytical approach combined with user-centric discovery, rapid prototyping, and experimentation to convert complex user pain points into simple, high-impact features.",
   bulletsCard: [

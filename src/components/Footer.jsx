@@ -29,7 +29,7 @@ export const Footer = () => {
               Let's Connect
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 font-normal mt-1 max-w-md mx-auto">
-              Happy to discuss product roles, collaborations, or feedback on my case studies.
+              Happy to discuss Product Intern & APM roles, collaborations, or feedback on my case studies.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export const Footer = () => {
 
         {/* Footer Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-medium text-slate-500">
-          <p>© 2026 Ashutosh Verma. Associate Product Manager Portfolio.</p>
+          <p>© 2026 Ashutosh Verma. Early-career product professional portfolio.</p>
           
           <button
             onClick={scrollToTop}

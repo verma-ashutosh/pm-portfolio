@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo, aboutContent, currentFocus, educationList } from '../data/portfolioData';
-import { GraduationCap, MapPin, Mail, Linkedin, ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, MapPin, Mail, Linkedin, CheckCircle2 } from 'lucide-react';
 
 export const AboutEducation = () => {
   return (
@@ -15,7 +15,7 @@ export const AboutEducation = () => {
             <div>
               <h3 className="font-bold text-sm text-[#18181B]">Ashutosh Verma</h3>
               <p className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                Associate Product Manager
+                Early-career product professional
               </p>
               <div className="flex items-center gap-1.5 text-xs text-slate-600 mt-1">
                 <MapPin className="w-3.5 h-3.5 text-slate-400" />
@@ -91,7 +91,7 @@ export const AboutEducation = () => {
 
         </div>
 
-        {/* Section 10: Academic Qualifications (Compact Layout) */}
+        {/* Academic Qualifications */}
         <div className="space-y-3 pt-4 border-t border-slate-200">
           <div className="flex items-center gap-2">
             <GraduationCap className="w-4 h-4 text-slate-700" />
