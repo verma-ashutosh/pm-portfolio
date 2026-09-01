@@ -43,10 +43,23 @@ export const currentFocus = [
 
 export const allProductCards = [
   {
+    id: "spotify-teardown",
+    title: "Spotify Teardown",
+    category: "Teardowns",
+    image: "https://images.unsplash.com/photo-1614680376593-902f749f7edc?q=80&w=800&auto=format&fit=crop",
+    tags: [
+      { text: "TEARDOWN", style: "bg-blue-100 text-blue-800 border border-blue-200" },
+      { text: "MUSIC TECH", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Analyzed music discovery flows, algorithmic recommendations, and playlist retention mechanics to reduce drop-offs.",
+    ctaText: "View Teardown ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1gadlouYivMIutzswPdnwFWKPhEJscPmFWyp0VN0Kk5c/edit"
+  },
+  {
     id: "jananivaani-ai",
     title: "Jananivaani AI",
     category: "Projects",
-    iconType: "HeartPulse",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
     tags: [
       { text: "PROTOTYPE", style: "bg-emerald-100 text-emerald-800 border border-emerald-200" },
       { text: "HEALTHCARE AI", style: "bg-slate-200 text-slate-700" }
@@ -57,23 +70,10 @@ export const allProductCards = [
     ctaUrl: "https://jananivaani.lovable.app/onboarding"
   },
   {
-    id: "khetify-case-study",
-    title: "Khetify Case Study",
-    category: "Case Studies",
-    iconType: "Leaf",
-    tags: [
-      { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
-      { text: "AGRITECH", style: "bg-slate-200 text-slate-700" }
-    ],
-    description: "9-slide strategic product deck covering agricultural pain points, advisory UX, and scalable market vision.",
-    ctaText: "View Case Study ↗",
-    ctaUrl: "https://docs.google.com/presentation/d/1IoMNC0CkiaHwizaxSS6skFmrZIirQxR3/edit"
-  },
-  {
     id: "zepto-teardown",
     title: "Zepto Teardown",
     category: "Teardowns",
-    iconType: "Zap",
+    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=800&auto=format&fit=crop",
     tags: [
       { text: "TEARDOWN", style: "bg-slate-200 text-slate-700" },
       { text: "QUICK COMMERCE", style: "bg-slate-200 text-slate-700" }
@@ -83,23 +83,23 @@ export const allProductCards = [
     ctaUrl: "https://docs.google.com/presentation/d/1ZMVg0Gcqa-2P5r_tJZdRKrdKBGlVZwCxiFQFbWl_i5M/edit"
   },
   {
-    id: "spotify-teardown",
-    title: "Spotify Teardown",
-    category: "Teardowns",
-    iconType: "Headphones",
+    id: "khetify-case-study",
+    title: "Khetify Case Study",
+    category: "Case Studies",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop",
     tags: [
-      { text: "TEARDOWN", style: "bg-blue-100 text-blue-800 border border-blue-200" },
-      { text: "MUSIC TECH", style: "bg-slate-200 text-slate-700" }
+      { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
+      { text: "AGRITECH", style: "bg-slate-200 text-slate-700" }
     ],
-    description: "Analyzed music discovery flows, algorithmic recommendations, and playlist retention mechanics to reduce drop-offs.",
-    ctaText: "View Teardown ↗",
-    ctaUrl: "https://docs.google.com/presentation/d/1gadlouYivMIutzswPdnwFWKPhEJscPmFWyp0VN0Kk5c/edit"
+    description: "9-slide strategic product deck covering agricultural pain points, advisory UX, and scalable market vision.",
+    ctaText: "View Case Study ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1IoMNC0CkiaHwizaxSS6skFmrZIirQxR3/edit"
   },
   {
     id: "groww-case-study",
     title: "Groww Case Study",
     category: "Case Studies",
-    iconType: "TrendingUp",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop",
     tags: [
       { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
       { text: "FINTECH", style: "bg-slate-200 text-slate-700" }
@@ -112,7 +112,7 @@ export const allProductCards = [
     id: "notion-teardown",
     title: "Notion Teardown",
     category: "Teardowns",
-    iconType: "FileText",
+    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800&auto=format&fit=crop",
     tags: [
       { text: "TEARDOWN", style: "bg-slate-200 text-slate-700" },
       { text: "PRODUCTIVITY", style: "bg-slate-200 text-slate-700" }
@@ -125,7 +125,7 @@ export const allProductCards = [
     id: "uber-case-study",
     title: "Uber Case Study",
     category: "Case Studies",
-    iconType: "Car",
+    image: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?q=80&w=800&auto=format&fit=crop",
     tags: [
       { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
       { text: "MARKETPLACE", style: "bg-slate-200 text-slate-700" }
@@ -138,7 +138,7 @@ export const allProductCards = [
     id: "khetify-live",
     title: "Khetify Live Portal",
     category: "Projects",
-    iconType: "Globe",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop",
     tags: [
       { text: "LIVE SITE", style: "bg-emerald-100 text-emerald-800 border border-emerald-200" },
       { text: "AGRITECH PLATFORM", style: "bg-slate-200 text-slate-700" }

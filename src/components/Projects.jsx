@@ -1,17 +1,5 @@
 import React, { useState } from 'react';
 import { allProductCards } from '../data/portfolioData';
-import { HeartPulse, Leaf, Zap, Headphones, TrendingUp, FileText, Car, Globe } from 'lucide-react';
-
-const iconMap = {
-  HeartPulse: HeartPulse,
-  Leaf: Leaf,
-  Zap: Zap,
-  Headphones: Headphones,
-  TrendingUp: TrendingUp,
-  FileText: FileText,
-  Car: Car,
-  Globe: Globe,
-};
 
 export const Projects = () => {
   const [activeTab, setActiveTab] = useState('All');
@@ -28,7 +16,7 @@ export const Projects = () => {
       {/* Central 1200px container width */}
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 space-y-8">
         
-        {/* Part 1: Header & Filter Navigation */}
+        {/* Header & Filter Navigation */}
         <div className="space-y-3">
           <span className="px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-bold uppercase tracking-wider inline-block">
             • PORTFOLIO & CASE STUDIES
@@ -64,29 +52,33 @@ export const Projects = () => {
           </div>
         </div>
 
-        {/* Part 2 & 3: The Cards Grid (3-Column Layout) */}
+        {/* 3-Column Grid with Image Thumbnails */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-          {filteredCards.map((card) => {
-            const IconComponent = iconMap[card.iconType] || FileText;
+          {filteredCards.map((card) => (
+            <div
+              key={card.id}
+              className="rounded-xl border border-[#EAEAEA] bg-white overflow-hidden flex flex-col justify-between shadow-2xs hover:border-slate-300 transition-all duration-200 group"
+            >
+              {/* Top Section (Thumbnail Image - Edge to Edge, No Padding) */}
+              <div className="h-48 sm:h-52 w-full relative overflow-hidden bg-slate-100 shrink-0">
+                <img
+                  src={card.image}
+                  alt={`${card.title} Cover Slide`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-60" />
+              </div>
 
-            return (
-              <div
-                key={card.id}
-                className="rounded-2xl border border-[#EAEAEA] bg-gradient-to-b from-[#F7F7F8] via-[#F7F7F8] to-white p-6 flex flex-col justify-between shadow-2xs hover:border-slate-300 transition-colors"
-              >
-                <div>
-                  {/* 1. Icon Box Top Left */}
-                  <div className="w-10 h-10 rounded-lg bg-slate-200 text-slate-800 flex items-center justify-center mb-3 shrink-0">
-                    <IconComponent className="w-5 h-5" />
-                  </div>
-
-                  {/* 2. Title (Bold H4) */}
-                  <h4 className="font-bold text-base text-[#18181B] mb-2 leading-snug">
+              {/* Bottom Section (Content - Solid White #FFFFFF with 20px Inner Padding) */}
+              <div className="p-5 bg-white flex flex-col justify-between flex-1 space-y-4">
+                <div className="space-y-2.5">
+                  {/* Title (Bold H4) */}
+                  <h4 className="font-bold text-base text-[#18181B] leading-snug">
                     {card.title}
                   </h4>
 
-                  {/* 3. Tags Flex Row */}
-                  <div className="flex flex-wrap gap-1.5 mb-3">
+                  {/* Tags Flex Row */}
+                  <div className="flex flex-wrap gap-1.5">
                     {card.tags.map((tag, idx) => (
                       <span
                         key={idx}
@@ -97,20 +89,20 @@ export const Projects = () => {
                     ))}
                   </div>
 
-                  {/* 4. Description */}
-                  <p className="text-xs text-slate-600 font-normal leading-relaxed mb-4">
+                  {/* Description (3-4 lines grey text) */}
+                  <p className="text-xs text-slate-600 font-normal leading-relaxed">
                     {card.description}
                   </p>
 
-                  {/* 5. Highlight Banner (If present) */}
+                  {/* Highlight Banner (if present) */}
                   {card.highlightBanner && (
-                    <div className="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200/80 text-[11px] font-semibold text-emerald-900 mb-4">
+                    <div className="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200/80 text-[11px] font-semibold text-emerald-900">
                       <span>{card.highlightBanner}</span>
                     </div>
                   )}
                 </div>
 
-                {/* 6. Bottom CTA Button */}
+                {/* Bottom CTA Button */}
                 <div className="pt-2">
                   <a
                     href={card.ctaUrl}
@@ -123,8 +115,9 @@ export const Projects = () => {
                 </div>
 
               </div>
-            );
-          })}
+
+            </div>
+          ))}
         </div>
 
       </div>
