@@ -41,80 +41,113 @@ export const currentFocus = [
   "Improving Khetify experience based on user feedback."
 ];
 
-export const productWorkData = {
-  teardowns: [
-    {
-      id: "zepto-teardown",
-      title: "Zepto Teardown",
-      tags: ["Quick Commerce", "UX Audit"],
-      description: "Dissected quick-commerce onboarding, cart friction, and dark-store fulfillment UX to identify high-impact growth loops.",
-      ctaText: "View Teardown",
-      ctaUrl: "https://docs.google.com/presentation/d/1ZMVg0Gcqa-2P5r_tJZdRKrdKBGlVZwCxiFQFbWl_i5M/edit"
-    },
-    {
-      id: "spotify-teardown",
-      title: "Spotify Teardown",
-      tags: ["Music Tech", "Personalization"],
-      description: "Analyzed music discovery flows, algorithmic recommendations, and playlist retention mechanics to reduce drop-offs.",
-      ctaText: "View Teardown",
-      ctaUrl: "https://docs.google.com/presentation/d/1gadlouYivMIutzswPdnwFWKPhEJscPmFWyp0VN0Kk5c/edit"
-    },
-    {
-      id: "notion-teardown",
-      title: "Notion Teardown",
-      tags: ["Productivity", "PLG Growth"],
-      description: "Examined modular canvas onboarding, template ecosystem, and Product-Led Growth (PLG) expansion triggers.",
-      ctaText: "View Teardown",
-      ctaUrl: "https://docs.google.com/presentation/d/1dDqb5hOj-3Lz214jHPLfK61FifuPwPW2Ql63-CXGEqs/edit"
-    }
-  ],
-  caseStudies: [
-    {
-      id: "uber-case-study",
-      title: "Uber Case Study",
-      tags: ["Rideshare UX", "Marketplace"],
-      description: "Strategic analysis of driver-rider matching friction, cancellation root causes, and dynamic ETA communication.",
-      ctaText: "View Case Study",
-      ctaUrl: "https://docs.google.com/presentation/d/17_WlJRbXu-z4pZjgds_1Bf57UBV8H_iiQqjfsb13bZc/edit"
-    },
-    {
-      id: "groww-case-study",
-      title: "Groww Case Study",
-      tags: ["Fintech", "Investor Onboarding"],
-      description: "Evaluated first-time investor onboarding funnel, SIP setup conversion, and educational trust signals.",
-      ctaText: "View Case Study",
-      ctaUrl: "https://docs.google.com/presentation/d/1pca3QLrZafoz8OhY0IKa6ZSUJvC0kr_FIqQy0w5Nvdw/edit"
-    },
-    {
-      id: "khetify-case-study",
-      title: "Khetify Case Study",
-      tags: ["AgriTech", "9-Slide Deck"],
-      description: "9-slide strategic product deck covering agricultural pain points, advisory UX, and scalable market vision.",
-      ctaText: "View Case Study",
-      ctaUrl: "https://docs.google.com/presentation/d/1IoMNC0CkiaHwizaxSS6skFmrZIirQxR3/edit"
-    }
-  ],
-  liveProjects: [
-    {
-      id: "jananivaani-live",
-      title: "Jananivaani",
-      tags: ["0→1 Healthcare AI", "Live Prototype"],
-      description: "Voice & text AI maternal health assistant eliminating text literacy and regional language barriers in rural care.",
-      role: "PM & AI Workflow Strategy",
-      ctaText: "Open Live App",
-      ctaUrl: "https://jananivaani.lovable.app/onboarding"
-    },
-    {
-      id: "khetify-live",
-      title: "Khetify",
-      tags: ["AgriTech Platform", "Live Web App"],
-      description: "Smart agricultural portal providing farmers with real-time crop insights, weather alerts, and advisory.",
-      role: "End-to-End PM & Design",
-      ctaText: "Open Live Site",
-      ctaUrl: "https://verma-ashutosh.github.io/Khetify/"
-    }
-  ]
-};
+export const allProductCards = [
+  {
+    id: "jananivaani-ai",
+    title: "Jananivaani AI",
+    category: "Projects",
+    iconType: "HeartPulse",
+    tags: [
+      { text: "PROTOTYPE", style: "bg-emerald-100 text-emerald-800 border border-emerald-200" },
+      { text: "HEALTHCARE AI", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "End-to-end product discovery and PRDs for an AI platform tackling healthcare literacy gaps in underserved communities.",
+    highlightBanner: "Validated MVP concepts for scalable agentic AI.",
+    ctaText: "Live Prototype ↗",
+    ctaUrl: "https://jananivaani.lovable.app/onboarding"
+  },
+  {
+    id: "khetify-case-study",
+    title: "Khetify Case Study",
+    category: "Case Studies",
+    iconType: "Leaf",
+    tags: [
+      { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
+      { text: "AGRITECH", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "9-slide strategic product deck covering agricultural pain points, advisory UX, and scalable market vision.",
+    ctaText: "View Case Study ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1IoMNC0CkiaHwizaxSS6skFmrZIirQxR3/edit"
+  },
+  {
+    id: "zepto-teardown",
+    title: "Zepto Teardown",
+    category: "Teardowns",
+    iconType: "Zap",
+    tags: [
+      { text: "TEARDOWN", style: "bg-slate-200 text-slate-700" },
+      { text: "QUICK COMMERCE", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Dissected quick-commerce onboarding, cart friction, and dark-store fulfillment UX to identify high-impact growth loops.",
+    ctaText: "View Teardown ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1ZMVg0Gcqa-2P5r_tJZdRKrdKBGlVZwCxiFQFbWl_i5M/edit"
+  },
+  {
+    id: "spotify-teardown",
+    title: "Spotify Teardown",
+    category: "Teardowns",
+    iconType: "Headphones",
+    tags: [
+      { text: "TEARDOWN", style: "bg-blue-100 text-blue-800 border border-blue-200" },
+      { text: "MUSIC TECH", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Analyzed music discovery flows, algorithmic recommendations, and playlist retention mechanics to reduce drop-offs.",
+    ctaText: "View Teardown ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1gadlouYivMIutzswPdnwFWKPhEJscPmFWyp0VN0Kk5c/edit"
+  },
+  {
+    id: "groww-case-study",
+    title: "Groww Case Study",
+    category: "Case Studies",
+    iconType: "TrendingUp",
+    tags: [
+      { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
+      { text: "FINTECH", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Evaluated first-time investor onboarding funnel, SIP setup conversion, and educational trust signals.",
+    ctaText: "View Case Study ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1pca3QLrZafoz8OhY0IKa6ZSUJvC0kr_FIqQy0w5Nvdw/edit"
+  },
+  {
+    id: "notion-teardown",
+    title: "Notion Teardown",
+    category: "Teardowns",
+    iconType: "FileText",
+    tags: [
+      { text: "TEARDOWN", style: "bg-slate-200 text-slate-700" },
+      { text: "PRODUCTIVITY", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Examined modular canvas onboarding, template ecosystem, and Product-Led Growth (PLG) expansion triggers.",
+    ctaText: "View Teardown ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/1dDqb5hOj-3Lz214jHPLfK61FifuPwPW2Ql63-CXGEqs/edit"
+  },
+  {
+    id: "uber-case-study",
+    title: "Uber Case Study",
+    category: "Case Studies",
+    iconType: "Car",
+    tags: [
+      { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
+      { text: "MARKETPLACE", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Strategic analysis of driver-rider matching friction, cancellation root causes, and dynamic ETA communication.",
+    ctaText: "View Case Study ↗",
+    ctaUrl: "https://docs.google.com/presentation/d/17_WlJRbXu-z4pZjgds_1Bf57UBV8H_iiQqjfsb13bZc/edit"
+  },
+  {
+    id: "khetify-live",
+    title: "Khetify Live Portal",
+    category: "Projects",
+    iconType: "Globe",
+    tags: [
+      { text: "LIVE SITE", style: "bg-emerald-100 text-emerald-800 border border-emerald-200" },
+      { text: "AGRITECH PLATFORM", style: "bg-slate-200 text-slate-700" }
+    ],
+    description: "Smart agricultural portal providing farmers with real-time crop insights, weather alerts, and crop advisory.",
+    ctaText: "Open Live Site ↗",
+    ctaUrl: "https://verma-ashutosh.github.io/Khetify/"
+  }
+];
 
 export const experienceList = [
   {
