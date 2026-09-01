@@ -46,7 +46,7 @@ export const allProductCards = [
     id: "spotify-teardown",
     title: "Spotify Teardown",
     category: "Teardowns",
-    image: "https://images.unsplash.com/photo-1614680376593-902f749f7edc?q=80&w=800&auto=format&fit=crop",
+    image: "./assets/spotify_cover.png",
     tags: [
       { text: "TEARDOWN", style: "bg-blue-100 text-blue-800 border border-blue-200" },
       { text: "MUSIC TECH", style: "bg-slate-200 text-slate-700" }
@@ -73,7 +73,7 @@ export const allProductCards = [
     id: "zepto-teardown",
     title: "Zepto Teardown",
     category: "Teardowns",
-    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=800&auto=format&fit=crop",
+    image: "./assets/zepto_cover.png",
     tags: [
       { text: "TEARDOWN", style: "bg-slate-200 text-slate-700" },
       { text: "QUICK COMMERCE", style: "bg-slate-200 text-slate-700" }
@@ -125,7 +125,7 @@ export const allProductCards = [
     id: "uber-case-study",
     title: "Uber Case Study",
     category: "Case Studies",
-    image: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?q=80&w=800&auto=format&fit=crop",
+    image: "./assets/uber_cover.png",
     tags: [
       { text: "CASE STUDY", style: "bg-slate-200 text-slate-700" },
       { text: "MARKETPLACE", style: "bg-slate-200 text-slate-700" }
